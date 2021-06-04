@@ -20,7 +20,7 @@ export class AppComponent {
 
   handleTaskRemove(taskIdx: number) {
       //z https://stackoverflow.com/questions/41684114/easy-way-to-make-a-confirmation-dialog-in-angular
-      if(confirm("Czy na pewno usunąć "+name+"?")) {
+      if(confirm("Czy na pewno usunąć "+this.tasks[taskIdx].description+"?")) {
       this.tasks.splice(taskIdx, 1);
     }
   }
